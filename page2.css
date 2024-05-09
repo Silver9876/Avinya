@@ -274,6 +274,7 @@ section {
 }
 #events .tech{
   top: 250% !important;
+z-index:30;
 }
 
 #events .non-tech{
