@@ -298,6 +298,7 @@ section {
 
   .login-box form a {
     padding: 10px 15px; /* Adjust padding for button on smaller screens */
+    left: 32% !important;
   }
   section {
     min-height: 80vh;
