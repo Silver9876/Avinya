@@ -205,7 +205,7 @@ section {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
   header {
     display: none;
   }
@@ -232,7 +232,7 @@ section {
     text-align: center;
   }
 
-  .image{
+  .image {
     top: -5%;
     left: 2%;
     width: 100%;
@@ -240,47 +240,50 @@ section {
     background-size: cover;
     z-index: 100;
   }
-  
-  #about .outer p{
+
+  #about .outer p {
     position: absolute;
     top: 75% !important;
-}
-#timing .container {
+  }
+
+  #timing .container {
     position: absolute;
     top: 150% !important;
-  width: 100%;
-  /* z-index: 10; */
-}
+    width: 100%;
+    z-index: 10;
+  }
 
-#timing .timeline ul li {
-  width: 50%;
-  height: 200px;
-  overflow: scroll;
-}
+  #timing .timeline ul li {
+    width: 50%;
+    height: 200px;
+    overflow: scroll;
+  }
 
-#timing .timeline-content h1 {
-  font-size: 15px;
-}
+  #timing .timeline-content h1 {
+    font-size: 15px;
+  }
 
-#timing .timeline-content p {
-  font-size: 10px;
-  line-height: 1;
-}
-.timeline-content{
-  margin: 0px !important;
-}
-.timeline ul li::before {
-  display: none;
-}
-#events .tech{
-  top: 250% !important;
-z-index:30;
-}
+  #timing .timeline-content p {
+    font-size: 10px;
+    line-height: 1;
+  }
 
-#events .non-tech{
-  top: 300% !important;
-}
-/* @media only screen and (max-width: 600px) { */
+  .timeline-content {
+    margin: 0px !important;
+  }
+
+  .timeline ul li::before {
+    display: none;
+  }
+
+  #events .tech {
+    top: 250% !important;
+  }
+
+  #events .non-tech {
+    top: 300% !important;
+  }
+
   .login-box {
     position: absolute;
     top: 355% !important;
@@ -301,11 +304,12 @@ z-index:30;
     padding: 10px 15px; /* Adjust padding for button on smaller screens */
     left: 32% !important;
   }
+
   section {
     min-height: 80vh;
   }
-/* } */
 }
+
 
 .outerleft h1 {
   z-index: 5;
