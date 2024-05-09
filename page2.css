@@ -205,75 +205,6 @@ section {
 }
 
 
-
-.cube {
-  position: absolute;
-  top: 40%;
-  transform-style: preserve-3d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: animate 15s linear infinite;
-}
-
-@keyframes animate {
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-.shadow {
-  position: absolute;
-  top: 70%;
-  background: aqua;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(-130px) rotateX(90deg) rotateZ(3deg);
-  bottom: 0em;
-  left: 4em;
-  box-shadow: 0 120px 100px 10px blue, 50px 120px 200px 10px blue;
-  filter: blur(100px);
-}
-
-.top,
-.bottom,
-.left,
-.right,
-.front,
-.back {
-  height: 3em;
-  width: 3em;
-  background: aqua;
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  box-shadow: 0 0 50px 10px blue inset, 0 0 0 2em aqua inset;
-}
-
-.front {
-  transform: translateZ(1.5em);
-}
-
-.back {
-  transform: translateZ(-1.5em);
-}
-
-.top {
-  transform: translateY(-1.5em) rotateX(90deg);
-}
-
-.bottom {
-  transform: translateY(1.5em) rotateX(90deg);
-}
-
-.right {
-  transform: translateX(1.5em) rotateY(90deg);
-}
-
-.left {
-  transform: translateX(-1.5em) rotateY(90deg);
-}
-
 @media only screen and (max-width: 600px) {
   header {
     display: none;
@@ -297,7 +228,7 @@ section {
 
   .outerleft p {
     font-size: 20px !important;
-    top: 65% !important;
+    top: 70% !important;
     text-align: center;
   }
 
@@ -309,61 +240,14 @@ section {
     background-size: cover;
     z-index: 100;
   }
-  .shadow {
-    top: 70%;
-    width: 2em;
-    height: 2em;
-    transform: translateZ(-130px) rotateX(90deg) rotateZ(3deg);
-    left: 4em;
-  }
-
-  .top,
-  .bottom,
-  .left,
-  .right,
-  .front,
-  .back {
-    height: 2em;
-    width: 2em;
-    top: 80%;
-  }
-
-  .front {
-    transform: translateZ(1em);
-  }
-
-  .back {
-    transform: translateZ(-1em);
-  }
-
-  .top {
-    transform: translateY(-1em) rotateX(90deg);
-  }
-
-  .bottom {
-    transform: translateY(1em) rotateX(90deg);
-  }
-
-  .right {
-    transform: translateX(1em) rotateY(90deg);
-  }
-
-  .left {
-    transform: translateX(-1em) rotateY(90deg);
-  }
-
-  #about .outer h1{
-    position: absolute;
-    top: 70%;
-    left: 14%;
-  }
+  
   #about .outer p{
     position: absolute;
-    top: 70% !important;
+    top: 75% !important;
 }
 #timing .container {
     position: absolute;
-    top: 140% !important;
+    top: 150% !important;
   width: 100%;
   /* z-index: 10; */
 }
@@ -389,16 +273,16 @@ section {
   display: none;
 }
 #events .tech{
-  top: 230% !important;
+  top: 250% !important;
 }
 
 #events .non-tech{
-  top: 280% !important;
+  top: 300% !important;
 }
 /* @media only screen and (max-width: 600px) { */
   .login-box {
     position: absolute;
-    top: 330% !important;
+    top: 355% !important;
     max-width: 90%; /* Adjust width as needed for smaller screens */
     padding: 15px; /* Adjust padding for better fit */
   }
@@ -509,64 +393,6 @@ section {
     font-size: 20px;
     color: white;
 }
-
-/* -----------time line----------- */
-/* .bar{
-    counter-reset: step;
-    margin-top: 75px;
-    padding: 0;
-    counter-increment: step 2017;
-}
-
-.bar li{
-    list-style-type: none;
-    width: 33.3%;
-    float: left;
-    position: relative;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.bar li::before{
-    content: counter(step);
-    counter-increment: step;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: 3px solid #ecf0f1;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    background-color: #ecf0f1;
-    letter-spacing: 0px;
-}
-
-.bar li::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #ecf0f1;
-    top: 25px;
-    left: -50%;
-    z-index: -1;
-}
-
-.bar li:first-child::after{
-    content: none;
-}
-
-.bar li.active{
-    color: #f1c40f;
-}
-.bar li.active1{
-    border-color: #f1c40f;
-}
-
-.bar li.active1 + li:after{
-    background-color: #f1c40f;
-} */
 
 #timing .container {
     top: 120%;
@@ -821,15 +647,15 @@ section {
 
     .login-box {
       width: 600px;
-      height: 400px; /* Adjusted height to 400px */
+      max-height: 700px; /* Adjusted height to 400px */
       padding: 10px; /* Reduced padding for a more compact form */
       background: rgba(0,0,0,.5);
       box-sizing: border-box;
       box-shadow: 0 15px 25px rgba(0,0,0,.6);
       border-radius: 10px;
-      /* background-color: #00ffff; */
       position: absolute;
       top: 380%;
+      overflow-y: hidden;
     }
     
     .login-box h2 {
@@ -843,7 +669,9 @@ section {
       position: relative;
     }
     
+
     .login-box .user-box input {
+      /* border: 1px solid wheat; */
       width: 100%;
       padding: 5px 0;
       font-size: 16px;
@@ -856,6 +684,7 @@ section {
     }
     
     .login-box .user-box label {
+      /* border: 1px solid wheat; */
       position: absolute;
       top:0;
       left: 0;
@@ -874,8 +703,11 @@ section {
       font-size: 12px;
     }
     
+    
+
     .login-box form a {
       position: relative;
+      left: 33%;
       display: inline-block;
       padding: 5px 20px;
       color: #03e9f4;
@@ -913,6 +745,7 @@ section {
     }
     
     #description {
+      margin-top: 20px !important;
       width: 100%;
       min-height: 80px;
       font-size: 16px;
